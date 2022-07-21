@@ -46,12 +46,6 @@ body {
     background-repeat: no-repeat;
     background-position-y: 0%, 100%;
 }
-@media (min-width: 992px) {
-    body {
-        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
-        background-position-x: 0%, 50%;
-    }
-}
 .container main {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -59,6 +53,7 @@ body {
 @media (min-width: 992px) {
     body {
         background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-position-x: 0%, 50%;
     }
     .container main {
         padding-top: 100px;
