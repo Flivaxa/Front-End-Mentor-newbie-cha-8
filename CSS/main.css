@@ -1,0 +1,181 @@
+/* Start Variables */
+:root {
+    --Primary-Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Primary-Soft-Pink: hsl(333, 80%, 67%);
+    --Neutral-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Neutra-Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --Neutral-White: hsl(0, 0%, 100%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Rules */
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0%, 100%;
+}
+@media (min-width: 992px) {
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    }
+}
+.container main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    }
+    .container main {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+.container main .head {
+    text-align: center;
+}
+.container main .head h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: var(--Primary-Very-Dark-Magenta);
+}
+.container main .head p {
+    line-height: 1.6;
+    color: var(--Neutral-Dark-Grayish-Magenta);
+    font-weight: 500;
+}
+.container main .head .rate {
+    margin: 50px 0;
+}
+.container main .head .rate > div {
+    padding: 20px 35px;
+    background-color: var(--Neutra-Light-Grayish-Magenta);
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+@media (min-width: 992px) {
+    .container main {
+        display: flex;
+        flex-direction: column;
+    }
+    .container main .head {
+        display: flex;
+        text-align: start;
+    }
+    .container main .head h1 {
+        margin-left: 0;
+        margin-right: 150px;
+    }
+    .container main .head > div:first-child {
+        width: 40%;
+    }
+    .container main .head .rate {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .container main .head .rate > div {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        width: 80%;
+    }
+    .container main .head .rate > div:first-child {
+        margin-right: 100px;
+    }
+    .container main .head .rate > div:nth-child(2) {
+        margin-right: 50px;
+    }
+}
+@media (min-width: 1200px) {
+    .container main .head .rate > div {
+        width: 70%;
+    }
+}
+.container main .head .rate .star-icons {
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+.container main .head .rate .star-icons img:not(:last-child) {
+    margin-right: 5px;
+}
+.container main .head .rate > div p {
+    margin: 0;
+    color: var(--Primary-Very-Dark-Magenta);
+    font-weight: 700;
+}
+.container main .comments .user {    
+    background-color: var(--Primary-Very-Dark-Magenta);
+    padding: 30px;
+    margin-bottom: 20px;
+    color: var(--Neutral-White);
+    border-radius: 10px;
+}
+@media (min-width: 992px) {
+    .container main .comments {
+        display: flex;
+        column-gap: 30px;
+    }
+    .container main .comments .user:nth-child(2) {
+        transform: translateY(30px);
+    }
+    .container main .comments .user:last-child {
+        transform:  translateY(60px);
+    }
+}
+.container main .comments .user .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.container main .comments .user .info img {    
+    border-radius: 50%;
+    width: 45px;
+    margin-right: 25px;
+}
+.container main .comments .user .info  div span:first-child {
+    font-weight: 500;
+}
+.container main .comments .user .info  div span:last-child {    
+    display: block;
+    margin-top: 5px;
+    color: var(--Primary-Soft-Pink);
+}
+.container main .comments .user p {
+    margin: 0;
+    line-height: 1.6;
+}
